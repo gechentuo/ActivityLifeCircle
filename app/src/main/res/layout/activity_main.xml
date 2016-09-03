@@ -25,9 +25,17 @@
                 android:text="首次启动" />
 
             <TextView
+                style="@style/TipText"
+                android:text="onCreate  -> onStart —> onResume" />
+
+            <TextView
                 android:id="@+id/btn_open_new"
                 style="@style/ButtonText"
                 android:text="打开新Activity" />
+
+            <TextView
+                style="@style/TipText"
+                android:text="onPause -> onStop" />
 
             <TextView
                 android:id="@+id/btn_click_home"
@@ -35,9 +43,17 @@
                 android:text="Home键返回桌面" />
 
             <TextView
+                style="@style/TipText"
+                android:text="onPause -> onStop" />
+
+            <TextView
                 android:id="@+id/btn_back_last"
                 style="@style/ButtonText"
                 android:text="返回原Activity" />
+
+            <TextView
+                style="@style/TipText"
+                android:text="onRestart -> onStart -> onResume" />
 
             <TextView
                 android:id="@+id/btn_click_back"
@@ -45,9 +61,17 @@
                 android:text="按Back键回退" />
 
             <TextView
+                style="@style/TipText"
+                android:text="onPause -> onStop -> onDestroy" />
+
+            <TextView
                 android:id="@+id/btn_destroy_relaunch"
                 style="@style/ButtonText"
                 android:text="Activity被系统回收后再次打开" />
+
+            <TextView
+                style="@style/TipText"
+                android:text="onCreate  -> onStart —> onResume" />
 
         </LinearLayout>
 
